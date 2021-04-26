@@ -1,0 +1,133 @@
+$color-black: #0e1219ff;
+$color-green: #22dc9e;
+$color-white: #fbfbfbff;
+$color-orange: #f8a114;
+$color-brown: #816c61ff;
+$font-title:'Roboto Mono', monospace;
+$font-text: 'Oswald', sans-serif;
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: $color-black
+}
+nav{
+    background-color: $color-black;
+    color: $color-white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    font-family: $font-text;
+    img{
+        margin: 0 0 0 1em;
+        height: auto;
+    }
+    ul{
+        display: flex;
+        li{
+            list-style: none;
+            align-self: center;
+            a{
+                text-decoration: none;
+                margin: 0 1em 0 0;
+                color:  $color-orange;
+                font-size: 1.2em;
+                &:hover{
+                    color: $color-white;
+                }
+            }
+        }
+    }
+}
+.slide{
+    img{
+        height: auto;
+        width: 100%;
+        display: block;
+    }
+}
+
+h1{
+    color: $color-white;
+    text-align: center;
+    margin: 1em 0 0 0;
+}
+@mixin sections-styles {
+    padding: 2em;
+    h2{
+        color: $color-green;
+        text-align: center;
+        margin: 0 0 1em 0;
+        font-family: $font-title;
+    }
+    img{
+        width: 100%;
+        height: auto;
+        margin: 0 0 1em 0;
+    }
+    p{
+        color: $color-white;
+        margin: 0 0 1em 0;
+        font-family: $font-text;
+    }
+    a{
+        color: $color-white;
+        text-decoration: none;
+        display: block;
+        margin: 0 auto;
+        font-family: $font-text;
+        &:hover{
+            color: $color-green;
+        }
+    }
+}
+
+.sections{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .NEWS{
+        @include sections-styles;
+    }
+    .CASES{
+        @include sections-styles;
+    }
+
+}
+@mixin footer-styles {
+    h3{
+        color: $color-green;
+        font-family: $font-title;
+        margin: 0 0 1em 0;
+    }
+    a{
+        color: $color-white;
+        text-decoration: none;
+        font-family: $font-text;
+        margin: 0 0 1em 0;
+        &:hover{
+            color: $color-orange;
+        }
+        display: flex;
+        flex-direction: column;
+    }
+    p{
+        font-family: $font-text;
+        color: $color-white;
+    }
+}
+footer{
+    display: grid;
+    padding: 2em;
+    grid-template-columns: repeat(3, 1fr);
+    .colunm1{
+        @include footer-styles();
+    }
+    .colunm2{
+        @include footer-styles();
+    }
+    .colunm3{
+        @include footer-styles();
+    }
+}
