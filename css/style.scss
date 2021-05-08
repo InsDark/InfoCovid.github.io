@@ -23,6 +23,10 @@ nav{
         margin: 0 0 0 1em;
         height: auto;
         width: 30%;
+        @media (max-width:600px) {
+            width: 50%;
+        }
+
     }
 }
 .slide{
@@ -40,7 +44,6 @@ h1{
     font-family: $font-text;
 }
 @mixin sections-styles {
-    width: 40%;
     h2{
         color: $color-green;
         text-align: center;
@@ -50,23 +53,26 @@ h1{
         letter-spacing: .3em;
     }
     img{
-        width: 100%;
+        width: 50%;
         height: auto;
         margin: 0 auto 1em auto;
         display: block;
     }
     p{
+        width: 50%;
         color: $color-white;
-        margin: 0 0 1em 0;
+        margin: 1em auto;
         font-family: $font-text;
         font-size: 1.5em;
+        text-align: center;
     }
     a{
         color: $color-brown;
         text-decoration: none;
         display: block;
-        margin: 0 auto;
+        margin: 1em auto;
         font-size: 1.5em;
+        text-align: center;
         font-family: $font-text;
         &:hover{
             color: $color-orange;
@@ -75,12 +81,17 @@ h1{
 }
 
 .sections{
-    display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     .CASES{
         @include sections-styles;
     }
-
+    @media (max-width:600px) {
+        .CASES{
+            img{
+                width: 80%;
+            }
+        }
+    }
 }
 @mixin footer-styles {
     width: 30%;
@@ -92,7 +103,7 @@ h1{
         font-size: 2em;
     }
     a{
-        color: $color-white;
+        color: $color-brown;
         text-decoration: none;
         font-family: $font-text;
         margin: 0 0 1em 0;
