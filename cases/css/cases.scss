@@ -214,3 +214,10 @@ footer{
         @include footer-styles();
     }
 }
+
+.copy{
+    margin-bottom: 1.5em;
+    p{
+        font-family: $font-title;
+    }
+}
