@@ -6,58 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/fv-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/cases.css">
-    <link rel="stylesheet" href="../icons/style.css">
     <title>INFOVID</title>
 </head>
 <body>
+    <script src="js/coutriesData/peru.js"></script>
+    <script src="js/coutriesData/colombia.js"></script>
+    <script src="js/coutriesData/argentina.js"></script>
+    <script src="js/coutriesData/chile.js"></script>
+    <script src="js/coutriesData/ecuador.js"></script>
+    <script src="js/coutriesData/brazil.js"></script>
+    <script src="js/covidData/peru.js"></script>
+    <script src="js/covidData/colombia.js"></script>
+    <script src="js/covidData/argentina.js"></script>
+    <script src="js/covidData/chile.js"></script>
+    <script src="js/covidData/brazil.js"></script>
+    <script src="js/covidData/ecuador.js"></script>
+
+    
     <nav>
         <img src="../img/logo-infocovid.png" alt="logo-infocovid">
-        <ul>
-            <li><a href="../index.html">MAIN</a></li>
-            <li><a href="cases/cases.html">IMPORTANT</a></li>
-            <li><a href="about/about.html">ABOUT US</a></li>
-        </ul>
     </nav>
     <div class="slide">
         <img src="../img/img-covid.jpg" alt="main-img">
     </div>
-    <h1>COVID Tracker SOUTH AMERICA</h1>
-    <div class="country-tracker">
-        <div class="data">
-            <img src="https://flagcdn.com/pe.svg" alt="" width="100%">
-            <div class="info-country">
-                <div>
-                    <span>Country Name:</span><p class="country-name">Peru</p>
-                </div>    
-                <div>
-                    <span>Population:</span><p class="population">1000</p>
-                </div>
+    <h1 class="title">CASOS DE LOS PAISES MAS REPRESENTATIVOS DE LATINOAMERICA</h1>
+    <p>El proyecto actual hace uso de dos APIs para su funcionamiento. <a target="_blank" href="https://restcountries.eu/">REST Countries</a> & <a target="_blank" href="https://www.trackcorona.live/api">TrackCorona</a></p>
+    <div class="countries-container">
+        <div class="country-details">
+            <div class="country-data">
+            </div>
+            <div class="country-covid">
             </div>
         </div>
-        <div class="info">
-            <h2>COVID Info</h2>
-            <span>Dead:</span><p class="deads">1000 </p>
-            <span>Recovered:</span><p class="recovered">1000 </p>
-            <span>Infected:</span><p class="infect">1000 </p>
-            <span>Percent %:</span><p class="percent">1000 </p>
+        <div class="country-details">
+            <div class="country-dataCol">
+            </div>
+            <div class="country-covidCo">
+            </div>
+        </div>
+        <div class="country-details">
+            <div class="country-dataAr">
+            </div>
+            <div class="country-covidAr">
+            </div>
+        </div>
+        <div class="country-details">
+            <div class="country-dataCl">
+            </div>
+            <div class="country-covidCl">
+            </div>
+        </div>
+        <div class="country-details">
+            <div class="country-dataBr">
+            </div>
+            <div class="country-covidBr">
+            </div>
+        </div>
+        <div class="country-details">
+            <div class="country-dataEc">
+            </div>
+            <div class="country-covidEc">
+            </div>
         </div>
     </div>
     <hr>
     <footer>
         <div class="colunm1">
-            <h3>ABOUT US</h3>
-            <p>We are a team of three students of highschool, and this is our apport aginst COVID-19 this TEMP project.</p>
+            <h3>NOSOTROS</h3>
+            <p>Un grupo de un estudiante, de secundaria, este un pequeño aporte con respecto al crecimiento del COVID en algunos paises sudamericanos.</p>
         </div>
         <div class="colunm2">
-            <h3>KNOW MORE</h3>
-            <a href="#">Our Mission</a>
-            <a href="#">Our Sight</a>
-        </div>
-        <div class="colunm3">
-            <h3>FOLLOW US</h3>
-            <a href="https://facebook.com" class="icon-facebook" target="_blank">FACEBOOK</a>
-            <a href="https://twitter.com" class="icon-social-twitter" target="_blank">TWITTER</a>
-            <a href="https://reddit.com" class="icon-reddit" target="_blank">REDDIT</a>
+            <h3>CODE</h3>
+            <p>Puedes descargar el codigo del proyecto <a href="https://github.com/InsDark/InfoCovid.github.io" target="_blank">aquí</a></p>
         </div>
     </footer>
 </body>
